@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "coolfork-online-server",
+  "name": "funkin-online-server",
   "version": "1.0.0",
   "description": "",
   "main": "build/index.js",
@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "nodemon src/index.ts",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc build --output public",
     "clean": "rimraf build",
     "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000",
     "haxify": "npx schema-codegen src/rooms/schema/* --haxe --output src/rooms/schema/",
