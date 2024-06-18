@@ -1,5 +1,5 @@
 {
-"private": true,
+  "private": true,
   "name": "funkin-online-server",
   "version": "1.0.0",
   "description": "",
@@ -15,7 +15,7 @@
     "haxify": "npx schema-codegen src/rooms/schema/* --haxe --output src/rooms/schema/",
     "servsetup": "node setupservice.js",
     "servrestart": "systemctl restart funkin-online.service",
-    "servlogs": "journalctl -u funkin-online.service"
+    "servlogs": "journalctl -u funkin-online.service",
     "build": "colyseus build --output public"
   },
   "author": "Snirozu",
